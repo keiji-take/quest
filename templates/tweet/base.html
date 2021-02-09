@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>QUEST</title>
+  </head>
+  <body>
+    <header class='site-header'>
+      <nav class='navbar nabver-expand navbar-dark bg-steel'>
+        <div class='container'>
+          <div class='collapse navbar-collapse' id='navbarToggle'>
+            <a class='nav-item nav-link' href="#">Home</a>
+          </div>
+          <div class='navbar-nav'>
+            <a href="#" class='nav-item nav-link'>Login</a>
+            <a href="#" class='nav-item nav-link'>Register</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          {% block content %}
+          {% endblock content %}
+          aaa
+        </div>
+      </div>
+    </main>
+  </body>
+  
+</html>
